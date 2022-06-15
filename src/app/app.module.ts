@@ -8,10 +8,12 @@ import { AppComponent } from './app.component';
 import { CorsAnywhereInterceptor } from './services/deezer.service';
 import { ArtistCardComponent } from './artists/artist-card.component';
 import { ArtistDetailsComponent } from './artists/artist-details.component';
+import { ArtistSearchComponent } from './artists/artist-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ArtistSearchComponent,
     ArtistCardComponent,
     ArtistDetailsComponent
   ],
