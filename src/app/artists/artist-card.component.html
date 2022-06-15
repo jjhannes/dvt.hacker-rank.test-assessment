@@ -1,0 +1,23 @@
+
+<!-- <div class="col-sm-4 col-md-4 col-lg-4"> -->
+
+    <div class="card text-light bg-dark">
+
+        <div class="card-header">{{ artist.name }}</div>
+
+        <img [src]="artist.picture_medium" class="card-img-top" [alt]="artist.name">
+
+        <div class="card-body p-0">
+
+            <ul class="list-group list-group-flush text-light bg-dark">
+
+                <li class="list-group-item text-light bg-dark text-end">{{ !!artist.nb_fan ? (artist.nb_fan | number) : "..." }} fans</li>
+                <li class="list-group-item text-light bg-dark text-end">{{ artist.nb_album || "..." }} albums</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+<!-- </div> -->

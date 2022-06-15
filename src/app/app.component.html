@@ -17,7 +17,7 @@
 
       <div class="input-group mb-3">
 
-        <input type="text" class="form-control" placeholder="Search artists">
+        <input type="text" class="form-control" placeholder="Search artists" [(ngModel)]="queryInput" />
         <button class="btn btn-secondary" type="button" (click)="search()">Search</button>
     
       </div>
@@ -28,6 +28,13 @@
 
   </div>
 
+  <div class="row pt-5" *ngIf="!!matchingArtists && matchingArtists.length">
 
+    <h1>Results for "{{ artistQuery }}"</h1>
+    
+    <app-artist-card class="col-sm-2 col-md-2 col-lg-2 mb-3" *ngFor="let artist of matchingArtists" [artist]="artist">
+    </app-artist-card>
+    
+  </div>
 
 </div>
