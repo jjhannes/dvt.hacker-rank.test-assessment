@@ -7,11 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CorsAnywhereInterceptor } from './services/deezer.service';
 import { ArtistCardComponent } from './artists/artist-card.component';
+import { ArtistDetailsComponent } from './artists/artist-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArtistCardComponent
+    ArtistCardComponent,
+    ArtistDetailsComponent
   ],
   imports: [
     BrowserModule,
