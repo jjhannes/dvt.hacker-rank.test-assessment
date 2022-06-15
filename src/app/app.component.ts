@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'musicdb-app-angular';
+
+  title = 'DeeVerT';
+
+  search() {
+    
+    // query deezer service
+
+  }
+
 }

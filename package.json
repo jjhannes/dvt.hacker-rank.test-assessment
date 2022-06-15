@@ -8,7 +8,7 @@
     "build": "ng build",
     "test": "ng test",
     "hacker-rank:start": "ng serve --host 0.0.0.0 --port 8000 --disable-host-check",
-    "hacker-rank:test": "./hackerrank.sh",
+    "hacker-rank:test": "ng test --browsers=ChromeHeadless --watch=true",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -22,8 +22,10 @@
     "@angular/platform-browser": "~11.2.1",
     "@angular/platform-browser-dynamic": "~11.2.1",
     "@angular/router": "~11.2.1",
+    "bootstrap": "^5.1.3",
     "concurrently": "^6.0.1",
     "rxjs": "~6.6.0",
+    "s": "^1.0.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
   },
@@ -41,10 +43,10 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "karma-junit-reporter": "^1.2.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.1.2",
-    "karma-junit-reporter": "^1.2.0"
+    "typescript": "~4.1.2"
   }
 }
